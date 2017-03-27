@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6677cd"
+        android:orientation="vertical"
+
+
+    tools:context="com.example.siddharth.sidaid2.MainActivity">
+
+        <ViewFlipper
+            android:id="@+id/viewflipper1"
+            android:layout_width="wrap_content"
+            android:layout_height="220dp"
+            android:autoStart="true"
+            android:flipInterval="3000">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="220dp"
+                android:src="@drawable/women1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="220dp"
+                android:src="@drawable/women2" />
+        </ViewFlipper>
+
+
+        <Button
+            android:id="@+id/emergencybtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#F44336"
+            android:drawableLeft="@drawable/ambulance"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="36dp"
+            android:paddingTop="10dp"
+            android:text="@string/emergency"
+            android:textColor="#e8e9e9"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/reminderbtnbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#03A9F4"
+            android:drawableLeft="@drawable/reminder"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="36dp"
+            android:paddingTop="10dp"
+            android:text="@string/reminder"
+            android:textColor="#e8e9e9"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/nearmebtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#4CAF50"
+            android:drawableLeft="@drawable/nearme"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="36dp"
+            android:paddingTop="10dp"
+            android:text="@string/nearme"
+            android:textColor="#e8e9e9"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/diseasebtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFC107"
+            android:drawableLeft="@drawable/doctors"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="36dp"
+            android:paddingTop="10dp"
+            android:text="@string/disease"
+            android:textColor="#e8e9e9"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>

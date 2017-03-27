@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TrialSidAID2</string>
+
+    <string name="emergency">Emergency</string>
+    <string name="reminder"> Water Reminder</string>
+    <string name="nearme">Near Me</string>
+    <string name="disease">Disease Prediction</string>
+    <string name="title_activity_emergency">Emergency</string>
+    <string name="locationtxt">Location Co-ordinates</string>
+
+    <string name="water_calculator">Water Intake Calculator</string>
+    <string name="title_activity_map_places">Map</string>
+    <string name="title_activity_water_reminder">WaterReminder</string>
+    <string name="title_activity_nearby_place_picker">NearbyPlacePicker</string>
+
+
+</resources>

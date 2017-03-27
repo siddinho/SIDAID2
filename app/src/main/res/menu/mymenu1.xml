@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/sedantary"
+        android:title="Sedantary" />
+    <item
+        android:id="@+id/light"
+        android:title="Light Outdoors" />
+    <item
+        android:id="@+id/heavy"
+        android:title="High Outdoors" />
+
+</menu>
