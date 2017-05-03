@@ -47,14 +47,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        final Button DiseasePrediction= (Button) findViewById(R.id.diseasebtn);
-        DiseasePrediction.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i=new Intent(MainActivity.this,DiseasePrediction.class);
-                startActivity(i);
-            }
-        });
+//        final Button DiseasePrediction= (Button) findViewById(R.id.diseasebtn);
+//        DiseasePrediction.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent i=new Intent(MainActivity.this,DiseasePrediction.class);
+//                startActivity(i);
+//            }
+//        });
 
 
 

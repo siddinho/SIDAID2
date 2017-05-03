@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">TrialSidAID2</string>
-
+    <string name="app_name"> Pocket Aid 2</string>
     <string name="emergency">Emergency</string>
     <string name="reminder"> Water Reminder</string>
     <string name="nearme">Near Me</string>

@@ -27,6 +27,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import br.com.bloder.magic.view.MagicButton;
@@ -76,7 +77,7 @@ public class Emergency extends AppCompatActivity implements OnMapReadyCallback, 
         mapFragment.getMapAsync(this);
         locationtxt = (TextView) findViewById(R.id.locationtxt);
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        //Marshmellow Permission Check
+
         if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
             Toast.makeText(this, "GPS is Enabled in your device\n\nFetching Current Co-ordinates Please Wait", Toast.LENGTH_LONG).show();
         } else {
@@ -119,6 +120,7 @@ public class Emergency extends AppCompatActivity implements OnMapReadyCallback, 
 
 //Toast .shortened
                         SmsManager smsManager = SmsManager.getDefault();
+                        Toast.makeText(Emergency.this,"Keep Calm !" + "\n Informing your Loved Ones",Toast.LENGTH_LONG).show();
                         smsManager.sendTextMessage(mno1, null, finalmessage, null, null);
                         Toast.makeText(Emergency.this, "First Msg sent", Toast.LENGTH_SHORT).show();
                         smsManager.sendTextMessage(mno2, null, finalmessage, null, null);
@@ -210,6 +212,8 @@ public class Emergency extends AppCompatActivity implements OnMapReadyCallback, 
 
     public void onMapReady1(GoogleMap googleMap) {
         mMap = googleMap;
+        // Marker mLoc;
+        mMap.clear();
 
 
         if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -233,6 +237,7 @@ public class Emergency extends AppCompatActivity implements OnMapReadyCallback, 
 
         mMap.addMarker(new
                 MarkerOptions().position(currentcoordinates).title("You Are Here"));
+
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currentcoordinates, zoomLevel));
 
     }

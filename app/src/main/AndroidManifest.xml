@@ -22,11 +22,11 @@
             android:value="AIzaSyCYE3bbiC7BqM-MmFRjefiSD46zT74mnKk" />
 
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
         <activity
             android:name=".Emergency"
@@ -42,7 +42,16 @@
             android:name=".NearbyPlacePicker"
             android:label="@string/title_activity_nearby_place_picker"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".DiseasePrediction"></activity>
+        <activity android:name=".DiseasePrediction" />
+        <activity android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

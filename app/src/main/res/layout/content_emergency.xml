@@ -57,21 +57,21 @@
                     app:magic_button_size="80dp" />
 
 
-                <br.com.bloder.magic.view.MagicButton
-                    android:id="@+id/walkwithme"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"
-                    app:button_icon="@drawable/walk"
-                    app:button_icon_height="50dp"
-                    app:button_icon_width="50dp"
-                    app:expandable_area_color="#28ffae"
-                    app:hide_text=" Walk With Me!"
-                    app:hide_text_color="@android:color/black"
-                    app:hide_text_size="15dp"
-                    app:icon_button_color="#00eacc"
-                    app:magic_button_size="80dp" />
+                <!--<br.com.bloder.magic.view.MagicButton-->
+                    <!--android:id="@+id/walkwithme"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--app:button_icon="@drawable/walk"-->
+                    <!--app:button_icon_height="50dp"-->
+                    <!--app:button_icon_width="50dp"-->
+                    <!--app:expandable_area_color="#28ffae"-->
+                    <!--app:hide_text=" Walk With Me!"-->
+                    <!--app:hide_text_color="@android:color/black"-->
+                    <!--app:hide_text_size="15dp"-->
+                    <!--app:icon_button_color="#00eacc"-->
+                    <!--app:magic_button_size="80dp" />-->
             </LinearLayout>
         </ScrollView>
 

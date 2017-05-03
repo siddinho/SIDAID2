@@ -32,9 +32,9 @@ public class EditDetails extends AppCompatActivity {
         save = (TextView) findViewById(R.id.savebtn);
         ///Validation Added
 
-        if(mobilenumber1.length()<10 && mobilenumber2.length()<10 && mobilenumber3.length()<10  ){
-            Toast.makeText(EditDetails.this,"Invalid details",Toast.LENGTH_LONG).show();
-        }
+//        if(mobilenumber1.length()<10 && mobilenumber2.length()<10 && mobilenumber3.length()<10  ){
+//            Toast.makeText(EditDetails.this,"Invalid details",Toast.LENGTH_LONG).show();
+//        }
         final SQLiteDatabase mydatabase = openOrCreateDatabase("Database", MODE_PRIVATE, null);
         mydatabase.execSQL("CREATE TABLE IF NOT EXISTS data(Message VARCHAR,Number1 VARCHAR,Number2 VARCHAR,Number3 VARCHAR);");
         Cursor resultSet = mydatabase.rawQuery("Select *  from data", null);
@@ -44,6 +44,9 @@ public class EditDetails extends AppCompatActivity {
             m1 = resultSet.getString(1);
             m2 = resultSet.getString(2);
             m3 = resultSet.getString(3);
+            if(mobilenumber1.length()<10 && mobilenumber2.length()<10 && mobilenumber3.length()<10  ){
+       Toast.makeText(EditDetails.this,"Invalid details",Toast.LENGTH_LONG).show();
+       }
             msgtext.setText("" + msg);
             mobilenumber1.setText("" + m1);
             mobilenumber2.setText("" + m2);
